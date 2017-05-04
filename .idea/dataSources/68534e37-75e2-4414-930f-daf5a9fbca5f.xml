@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Mystore@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mystore">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="cubic"/>
+    <schema id="4" parent="1" name="geography"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="movies"/>
+    <schema id="7" parent="1" name="myshop"/>
+    <schema id="8" parent="1" name="pdt"/>
+    <schema id="9" parent="1" name="planner"/>
+    <schema id="10" parent="1" name="records"/>
+    <schema id="11" parent="1" name="rubric"/>
+    <schema id="12" parent="1" name="rubriccubic"/>
+    <schema id="13" parent="1" name="rubrick"/>
+    <schema id="14" parent="1" name="rubrikcubic"/>
+    <schema id="15" parent="1" name="snakes"/>
+    <schema id="16" parent="1" name="store"/>
+    <schema id="17" parent="1" name="vet"/>
+    <table id="18" parent="2" name="consigrdetails"/>
+    <table id="19" parent="2" name="records"/>
+    <column id="20" parent="18" name="consgrID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="18" name="consgrName">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="18" name="phone">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="18" name="email">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="24" parent="18" name="PRIMARY">
+      <ColNames>consgrID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="19" name="consgmentID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="19" name="quantity">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="19" name="artist">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="19" name="title">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="19" name="salesPrx">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="19" name="date">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="31" parent="19" name="PRIMARY">
+      <ColNames>consgmentID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
